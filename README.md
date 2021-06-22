@@ -10,8 +10,7 @@
 * beta
 * gamma
 * theta
-
 ## cities
-* vancouver
-* calgary
-* richmond
+* toronto
+* montreal
+* milton
