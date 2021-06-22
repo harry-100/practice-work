@@ -1,12 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>This is My Document</title>
+  <meta charset="UTF-8" />
+  <title>Run Buddy</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+ 
 </head>
+
 <body>
+  <!-- navigation -->
+  <header>
+    <h1>
+    <a href="/">RUN BUDDY</a>
+    <!-- The value of the href used here—a forward slash ("/")—will always represent the path to the topmost directory of an application or project. In this case, when a user clicks the <a> element, they will be taken to the topmost directory. And because there is no file specified, the index.html file will be loaded. -->
+    </h1>
+    <nav>
+      <!-- Unordered list element-->
+      <ul>
+        <!-- List item element -->
+        <li>
+          <!-- Anchor element -->
+          <a href="#what-we-do">What We Do</a>
+        </li>
+        <li>
+          <a href="#what-you-do">What You Do</a>
+        </li>
+        <li>
+          <a href="#your-trainers">Your Trainers</a>
+        </li>
+        <li>
+          <a href="#reach-out">Reach Out</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- hero/jumbotron -->
+  <section class="hero">
+    <div class="hero-cta">
+      <h2>Start Building Habits.</h2>
+      <p>
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+      </p>
+
+    </div>
+    <div class="hero-form">
+      <h3>Get Started Today</h3>
+      <p>Fill out this form and one of our trainers will schedule a consult.</p>
+      <!-- Add form element -->
+      <form>
+        <label for="name">Enter full name:</label><br>
+        <input class="form-input" type="text" placeholder="Your Name" name="name" id="name"/><br>
+        <label for="email">Enter email address:</label><br>
+        <input class = "form-input" type="email" placeholder="Email address" name="email" id="email"/><br>
+        <label for="phone">Enter a telephone number:</label><br>
+        <input class ="form-input" type="tel" placeholder="Phone number" name="phone" id="phone"/>
+        <p>
+          Have you worked out with a trainer before? 
+          <input type="radio" name="trainer-confirm" id="trainer-yes" />
+          <label for="trainer-yes">Yes</label>
+          <input type="radio" name="trainer-confirm" id="trainer-no" />
+          <label for="trainer-no">No</label>
+        <p>
+          <label for="over 18">
+            I acknowledge that I am atleast 18 years of age.
+          </label>
+            <input type="checkbox" id="over 18" name="over 18"/>
+        </p>
+          
+        <button type="Submit">Get Running!</button>
+      </form>
+    </div>
+  </section>
+  <!-- end hero -->
+
+  <!-- "what we do" section -->
+  <section id="what-we-do" class="intro">
+    <h2 class="section-title primary-border">What We Do</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum </p>
+  </section>
+
+  <!-- "what you do" section -->
+  <section id="what-you-do" class="steps">
+    <h2 class="section-title secondary-border">What You Do</h2>
+    <div>
+      <!-- insert this image element-->
+      <img src="./assets/images/steps/step-1.svg" alt="" />
+      <h3>Step 1: <span>Fill Out the Form Above.</span></h3>
+      <p>You're already here, so why not?</p>
+      
+    </div>
+    <div>
+      <img src="./assets/images/steps/step-2.svg" alt="" />
+      <h3>Step 2: <span>Consult with One of Our Trainers.</span></h3>
+      <p>Are you here to build muscle, lose weight, or just feel good?</p>
+    </div>  
+    <div>
+      <img src="./assets/images/steps/step-3.svg" alt="" />
+      <h3>Step 3: <span>Get Running.</span></h3>
+      <p>Hit the ground running (literally) once your trainer lays out your plan.</p>
+    </div>
+    <div>
+      <img src="./assets/images/steps/step-4.svg" alt="" />
+      <h3>Step 4: <span>See Results.</span></h3>
+      <p>Bi-weekly check-ins with your trainer will keep you focused</p>
+    </div>
+  </section>
+  <section id="your-trainers" class="trainers">
+  <!-- "meet the trainers" section -->
+     <h2 class="section-title primary-border">Meet The Trainers</h2>
+     <article class="trainer">
+       <img src="./assets/images/trainers/trainer-1.jpg" alt="Arron Stephens in his workout clothes, ready to pump iron">
+       <div class="trainer-bio text-left" >
+          <h3>Arron Stephens</h3>
+          <h4>Speed/ Strength</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+       </div>
+     </article>
+     
+     <article class="trainer">
+       
+       <div class="trainer-bio text-right">
+         <h3>Joanna Gill</h3>
+         <h4>Endurance</h4>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+       </div>
+       <img src="./assets/images/trainers/trainer-2.jpg" alt="Joanna Gill is ready for a marathon">
+     </article>
+
+     <article class="trainer">
+       <img src="./assets/images/trainers/trainer-3.jpg" alt="Harry Smith doing weights">
+       <div class="trainer-bio text-left">
+         <h3>Harry Smith</h3>
+         <h4>Strength</h4>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+       </div>
+
+     </article>
+  </section>
+
+  <!-- "reach out" section -->
+  <section id="reach-out" class="contact">
+    <h2 class="section-title secondary-border">Reach Out</h2>
+    <div class="contact-info">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2882.2939731951633!2d-79.75067152261506!3d43.7459917944275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1624202580833!5m2!1sen!2sca" 
+ 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy"></iframe>
     
+      <div>
+        <h3>Run Buddy</h3>
+        <p>
+          Any questions or concerns before signing up?<br>
+          Let us know and we'll be happy to talk to you!
+        </p>
+        <address>
+          999 Main St. <br>
+          Toronto, ON <br>
+          M1M2M3 <br>
+          P: 555.RUN.BUDZ (555.786.2839) <br>
+          E: <a href="mailto:info@runbuddy.io">info@runbuddy.io</a>
+        </address>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <h2>❤️ Made with love by Run Buddy.</h2>
+    <div>
+      <a href="./privacy-policy.html">Read Our Privacy Policy</a><br/>
+      &copy; 2019 Run Buddy, Inc.
+    </div>
+  </footer>
 </body>
+
 </html>
+
