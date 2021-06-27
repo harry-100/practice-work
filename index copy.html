@@ -1,0 +1,247 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Run Buddy</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+ 
+</head>
+
+<body>
+  <!-- navigation -->
+  <header>
+    <h1>
+    <a href="/">RUN BUDDY</a>
+    <!-- The value of the href used here—a forward slash ("/")—will always represent the path to the topmost directory of an application or project. In this case, when a user clicks the <a> element, they will be taken to the topmost directory. And because there is no file specified, the index.html file will be loaded. -->
+    </h1>
+    <nav>
+      <!-- Unordered list element-->
+      <ul>
+        <!-- List item element -->
+        <li>
+          <!-- Anchor element -->
+          <a href="#what-we-do">What We Do</a>
+        </li>
+        <li>
+          <a href="#what-you-do">What You Do</a>
+        </li>
+        <li>
+          <a href="#your-trainers">Your Trainers</a>
+        </li>
+        <li>
+          <a href="#reach-out">Reach Out</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- hero/jumbotron -->
+  <section class="hero">
+    <div class="hero-cta">
+      <h2>Start Building Habits.</h2>
+      <p>
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+      </p>
+
+    </div>
+    <div class="hero-form">
+      <h3>Get Started Today</h3>
+      <p>Fill out this form and one of our trainers will schedule a consult.</p>
+      <!-- Add form element -->
+      <form>
+        <label for="name">Enter full name:</label><br>
+        <input class="form-input" type="text" placeholder="Your Name" name="name" id="name"/><br>
+        <label for="email">Enter email address:</label><br>
+        <input class = "form-input" type="email" placeholder="Email address" name="email" id="email"/><br>
+        <label for="phone">Enter a telephone number:</label><br>
+        <input class ="form-input" type="tel" placeholder="Phone number" name="phone" id="phone"/>
+        <p>
+          Have you worked out with a trainer before? 
+          <span class="radio-wrapper">
+            <input type="radio" name="trainer-confirm" id="trainer-yes" />
+            <label for="trainer-yes">Yes</label>
+          </span>
+          <span class="radio-wrapper">
+            <input type="radio" name="trainer-confirm" id="trainer-no" />
+            <label for="trainer-no">No</label>
+          </span>
+        </p> 
+        <p>
+          <span class="checkbox-wrapper">
+            <input type="checkbox" id="checkbox" name="age-confirm"/>
+            <label for="checkbox">
+              I acknowledge that I am at least 18 years of age.
+            </label>
+            
+          </span>
+        </p>
+          
+        <button type="Submit">Get Running!</button>
+      </form>
+    </div>
+  </section>
+  <!-- end hero -->
+
+  <!-- "what we do" section -->
+  <section id="what-we-do" class="intro">
+    <div class="flex-row">
+      <h2 class="section-title primary-border">What We Do</h2>
+    </div>
+    <div class="flex-row">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum </p>
+    </div>
+  </section>
+
+  <!-- "what you do" section -->
+  <section id="what-you-do" class="steps">
+    <div class="flex-row">
+      <h2 class="section-title secondary-border">What You Do</h2>
+    </div>
+     
+      <!-- insert this image element-->
+     
+      <div class="step">
+        <h3>Step 1</h3>
+        <div class="step-info">
+          <div class="step-img">
+            <img src="./assets/images/steps/step-1.svg" alt="" />
+          </div>
+          <div class="step-text">
+           <h4>Fill Out the Form Above.</h4>
+            <p>You're already here, so why not?</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="step">
+        <h3>Step 2</h3>
+        <div class="step-info">
+          <div class="step-img">
+            <img src="./assets/images/steps/step-2.svg" alt="" />
+          </div>
+          <div class="step-text">
+             <h4>Consult with One of Our Trainers.</h4>
+            <p>Are you here to build muscle, lose weight, or just feel good?</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="step">
+        <h3>Step 3</h3>
+        <div class="step-info">
+          <div class="step-img">
+            <img src="./assets/images/steps/step-3.svg" alt="" />
+          </div>
+          <div class="step-text">
+             <h4>Get Running.</h4>
+             <p>Hit the ground running (literally) once your trainer lays out your plan.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="step">
+        <h3>Step 4</h3>
+        <div class="step-info">
+          <div class="step-img">
+            <img src="./assets/images/steps/step-4.svg" alt="" />
+          </div>
+          <div class="step-text">
+             <h4>See Results.</h4>
+             <p>Bi-weekly check-ins with your trainer will keep you focused</p>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section id="your-trainers">
+  <!-- "meet the trainers" section -->
+    <div class="flex-row">
+      <h2 class="section-title primary-border">Meet The Trainers</h2>
+    </div>
+    <div class="trainers">
+     <article class="trainer">
+       <img src="./assets/images/trainers/trainer-1.jpg" alt="Arron Stephens in his workout clothes, ready to pump iron">
+       <div class="trainer-bio" >
+          <h3>Arron Stephens</h3>
+          <h4>Speed/ Strength</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+       </div>
+     </article>
+     
+     <article class="trainer">
+       <img src="./assets/images/trainers/trainer-2.jpg" alt="Joanna Gill is ready for a marathon">
+       <div class="trainer-bio">
+         <h3>Joanna Gill</h3>
+         <h4>Endurance</h4>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+       </div>
+       
+     </article>
+
+     <article class="trainer">
+       <img src="./assets/images/trainers/trainer-3.jpg" alt="Harry Smith doing weights">
+       <div class="trainer-bio">
+         <h3>Harry Smith</h3>
+         <h4>Strength</h4>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+       </div>
+
+     </article>
+    </div>
+  </section>
+
+  <!-- "reach out" section -->
+  <section id="reach-out" class="contact">
+    <div class="flex-row">
+      <h2 class="section-title secondary-border">Reach Out</h2>
+    </div>
+      <div class="contact-info">
+        <div>
+          <h3>Run Buddy</h3>
+          <p>
+            Any questions or concerns before signing up?<br>
+            Let us know and we'll be happy to talk to you!
+          </p>
+          <address>
+            999 Main St. <br>
+            Toronto, ON <br>
+            M1M2M3 <br>
+            P: 555.RUN.BUDZ (555.786.2839) <br>
+            E: <a href="mailto:info@runbuddy.io">info@runbuddy.io</a>
+          </address>
+        </div>
+
+        <div class="contact-form">
+          <h3>Contact Us</h3>
+          <form>
+            <label for="contact-name">Your Name</label>
+            <input type="text" id="contact-name" placeholder="Your Name" />
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" placeholder="Message"></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2882.2939731951633!2d-79.75067152261506!3d43.7459917944275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1624202580833!5m2!1sen!2sca" 
+  
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy"></iframe>
+        
+      </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <h2>❤️ Made with love by Run Buddy.</h2>
+    <div>
+      <a href="./privacy-policy.html">Read Our Privacy Policy</a><br/>
+      &copy; 2019 Run Buddy, Inc.
+    </div>
+  </footer>
+</body>
+
+</html>
+
